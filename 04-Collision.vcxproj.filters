@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Gameobject">
+      <UniqueIdentifier>{9e0ec2c1-cf06-4485-b1b3-95f12f6fbac1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gameobject\Simon">
+      <UniqueIdentifier>{cce58bb2-3ef4-4d8c-873d-816327668a1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gameobject\Ground">
+      <UniqueIdentifier>{7553c30f-03dc-42f3-bf6f-cd494947cdf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gameobject\Enemies">
+      <UniqueIdentifier>{e91854d0-4e5d-4b09-9fd6-44fe9d594f77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{f5da35ef-b5c6-4206-8729-1d7e346332b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Camera">
+      <UniqueIdentifier>{6f74ae7c-1f40-4d78-a47d-e2fee56c4541}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Debug">
+      <UniqueIdentifier>{c7222b89-7960-4cd5-a2e5-31e85c1df7a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Define">
+      <UniqueIdentifier>{bee53540-4473-4be1-ac90-45b0ae534f7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Animation">
+      <UniqueIdentifier>{3894c458-ce6f-446e-9876-3179f7f0981a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Animation\Textures">
+      <UniqueIdentifier>{78fc06aa-e491-47ef-91cc-e035ae15ac60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Animation\Sprites">
+      <UniqueIdentifier>{bbfe88fb-5b44-46eb-8234-fabe04d89c00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gameobject\Ground\Brick">
+      <UniqueIdentifier>{4494c38e-5091-415c-9c54-c19fd5fc36a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Controler">
+      <UniqueIdentifier>{1a70f55d-6bc0-4b82-98d9-312ecdba8542}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Resources Manager">
+      <UniqueIdentifier>{dfeb07dd-d239-48ca-b8d5-132430d26be4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Scene">
+      <UniqueIdentifier>{f88c2193-51a8-4c16-913d-a7e33e52262b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Scene\Map">
+      <UniqueIdentifier>{2e470463-a309-4da4-ab57-d7e0d0750d14}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="debug.h">
+      <Filter>Framework\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures.h">
+      <Filter>Framework\Animation\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprites.h">
+      <Filter>Framework\Animation\Sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Gameobject</Filter>
+    </ClInclude>
+    <ClInclude Include="Mario.h">
+      <Filter>Gameobject\Simon</Filter>
+    </ClInclude>
+    <ClInclude Include="Goomba.h">
+      <Filter>Gameobject\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Brick.h">
+      <Filter>Gameobject\Ground\Brick</Filter>
+    </ClInclude>
+    <ClInclude Include="define.h">
+      <Filter>Framework\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="CSampleKeyHander.h">
+      <Filter>Framework\Controler</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>Framework\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="TexturesManager.h">
+      <Filter>Framework\Resources Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SpritesManager.h">
+      <Filter>Framework\Resources Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationManager.h">
+      <Filter>Framework\Resources Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGame.h">
+      <Filter>Framework\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Simon.h">
+      <Filter>Gameobject\Simon</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="debug.cpp">
+      <Filter>Framework\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Textures.cpp">
+      <Filter>Framework\Animation\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprites.cpp">
+      <Filter>Framework\Animation\Sprites</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Gameobject</Filter>
+    </ClCompile>
+    <ClCompile Include="Mario.cpp">
+      <Filter>Gameobject\Simon</Filter>
+    </ClCompile>
+    <ClCompile Include="Goomba.cpp">
+      <Filter>Gameobject\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Brick.cpp">
+      <Filter>Gameobject\Ground\Brick</Filter>
+    </ClCompile>
+    <ClCompile Include="define.cpp">
+      <Filter>Framework\Define</Filter>
+    </ClCompile>
+    <ClCompile Include="CSampleKeyHander.cpp">
+      <Filter>Framework\Controler</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>Framework\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="TexturesManager.cpp">
+      <Filter>Framework\Resources Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="SpritesManager.cpp">
+      <Filter>Framework\Resources Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationManager.cpp">
+      <Filter>Framework\Resources Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGame.cpp">
+      <Filter>Framework\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Simon.cpp">
+      <Filter>Gameobject\Simon</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp" />
+  </ItemGroup>
+</Project>
