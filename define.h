@@ -16,10 +16,15 @@
 #define MAIN_WINDOW_TITLE L"Castlevania"
 
 #define BACKGROUND_COLOR D3DCOLOR_XRGB(0, 0, 0)
-#define SCREEN_WIDTH 320
-#define SCREEN_HEIGHT 240
+#define SCREEN_WIDTH 540
+#define SCREEN_HEIGHT 340
 
 #define MAX_FRAME_RATE 120
+
+#define ID_TEX_MAP1 01
+#define ID_TEX_MAP2 02
+
+#define ID_TEX_BRICK 100
 
 #define ID_TEX_MARIO 0
 #define ID_TEX_ENEMY 10

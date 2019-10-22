@@ -37,30 +37,12 @@ void SceneGame::Loadresources()
 	mario->SetPosition(50.0f, 0);
 	objects.push_back(mario);
 
-	for (int i = 0; i < 5; i++)
+
+	for (int i = 0; i < 48; i++)
 	{
 		CBrick* brick = new CBrick();
 		brick->AddAnimation(601);
-		brick->SetPosition(100.0f + i * 60.0f, 74.0f);
-		objects.push_back(brick);
-
-		brick = new CBrick();
-		brick->AddAnimation(601);
-		brick->SetPosition(100.0f + i * 60.0f, 90.0f);
-		objects.push_back(brick);
-
-		brick = new CBrick();
-		brick->AddAnimation(601);
-		brick->SetPosition(84.0f + i * 60.0f, 90.0f);
-		objects.push_back(brick);
-	}
-
-
-	for (int i = 0; i < 30; i++)
-	{
-		CBrick* brick = new CBrick();
-		brick->AddAnimation(601);
-		brick->SetPosition(0 + i * 16.0f, 150);
+		brick->SetPosition(-220.0f + i * 32.0f, 270);
 		objects.push_back(brick);
 	}
 
@@ -85,6 +67,7 @@ void SceneGame::Update(DWORD dt)
 	vector<LPGAMEOBJECT> coObjects;
 	for (int i = 1; i < objects.size(); i++)
 	{
+	
 		coObjects.push_back(objects[i]);
 	}
 
@@ -110,7 +93,8 @@ void SceneGame::Render()
 		d3ddv->ColorFill(bb, NULL, BACKGROUND_COLOR);
 
 		spriteHandler->Begin(D3DXSPRITE_ALPHABLEND);
-
+		
+		game->Draw(-220.0f, -50.0f, TexturesManager::GetInstance()->Gettextures()->Get(ID_TEX_MAP1), 0, 0, 1535, 383);
 		for (int i = 0; i < objects.size(); i++)
 			objects[i]->Render();
 

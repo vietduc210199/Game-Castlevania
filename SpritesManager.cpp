@@ -40,8 +40,8 @@ SpritesManager::SpritesManager()
 	sprites->Add(10033, 125, 0, 139, 15, texMario);			// 
 
 
-	LPDIRECT3DTEXTURE9 texMisc = textures->Get(ID_TEX_MISC);
-	sprites->Add(20001, 408, 225, 424, 241, texMisc);
+	LPDIRECT3DTEXTURE9 texBrick = textures->Get(ID_TEX_BRICK);
+	sprites->Add(20001, 0, 0, 32, 32, texBrick);
 
 	LPDIRECT3DTEXTURE9 texEnemy = textures->Get(ID_TEX_ENEMY);
 	sprites->Add(30001, 5, 14, 21, 29, texEnemy);

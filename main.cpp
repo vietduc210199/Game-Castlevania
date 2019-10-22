@@ -8,6 +8,8 @@ CGame* game;
 CMario* mario = new CMario;
 CSampleKeyHander* keyHandler;
 SceneGame* sceneGame;
+TexturesManager* texManager;
+CTextures* textures;
 
 
 LRESULT CALLBACK WinProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
@@ -36,6 +38,7 @@ void Update(DWORD dt)
 
 void Render()
 {
+	//game->Draw(50.0f, 0, textures->Get(ID_TEX_MAP1), 1, 1, 383, 1535);
 	sceneGame->Render();
 }
 
@@ -137,6 +140,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	keyHandler = new CSampleKeyHander(mario, game);
 	game->InitKeyboard(keyHandler);
+
+	texManager = TexturesManager::GetInstance();
+	textures = texManager->Gettextures();
 
 	sceneGame = SceneGame::GetInstance(game, mario);
 

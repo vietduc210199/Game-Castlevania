@@ -46,9 +46,6 @@
     <Filter Include="Framework\Scene">
       <UniqueIdentifier>{f88c2193-51a8-4c16-913d-a7e33e52262b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Framework\Scene\Map">
-      <UniqueIdentifier>{2e470463-a309-4da4-ab57-d7e0d0750d14}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="debug.h">
