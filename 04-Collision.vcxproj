@@ -133,9 +133,8 @@
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="Goomba.h" />
     <ClInclude Include="Map.h" />
-    <ClInclude Include="Mario.h" />
-    <ClInclude Include="SceneGame.h" />
     <ClInclude Include="Simon.h" />
+    <ClInclude Include="SceneGame.h" />
     <ClInclude Include="Sprites.h" />
     <ClInclude Include="SpritesManager.h" />
     <ClInclude Include="Textures.h" />
@@ -153,9 +152,8 @@
     <ClCompile Include="Goomba.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Map.cpp" />
-    <ClCompile Include="Mario.cpp" />
-    <ClCompile Include="SceneGame.cpp" />
     <ClCompile Include="Simon.cpp" />
+    <ClCompile Include="SceneGame.cpp" />
     <ClCompile Include="Sprites.cpp" />
     <ClCompile Include="SpritesManager.cpp" />
     <ClCompile Include="Textures.cpp" />

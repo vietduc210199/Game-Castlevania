@@ -3,7 +3,7 @@
 void camera::setCameraPos()
 {
 	float cx, cy;
-	mario->GetPosition(cx, cy);
+	simon->GetPosition(cx, cy);
 
 	cx -= SCREEN_WIDTH / 8;
 	cy -= SCREEN_HEIGHT / 2;

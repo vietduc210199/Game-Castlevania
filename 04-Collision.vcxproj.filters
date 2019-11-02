@@ -63,9 +63,6 @@
     <ClInclude Include="GameObject.h">
       <Filter>Gameobject</Filter>
     </ClInclude>
-    <ClInclude Include="Mario.h">
-      <Filter>Gameobject\Simon</Filter>
-    </ClInclude>
     <ClInclude Include="Goomba.h">
       <Filter>Gameobject\Enemies</Filter>
     </ClInclude>
@@ -93,10 +90,10 @@
     <ClInclude Include="SceneGame.h">
       <Filter>Framework\Scene</Filter>
     </ClInclude>
+    <ClInclude Include="Map.h" />
     <ClInclude Include="Simon.h">
       <Filter>Gameobject\Simon</Filter>
     </ClInclude>
-    <ClInclude Include="Map.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -116,9 +113,6 @@
     </ClCompile>
     <ClCompile Include="GameObject.cpp">
       <Filter>Gameobject</Filter>
-    </ClCompile>
-    <ClCompile Include="Mario.cpp">
-      <Filter>Gameobject\Simon</Filter>
     </ClCompile>
     <ClCompile Include="Goomba.cpp">
       <Filter>Gameobject\Enemies</Filter>
@@ -147,9 +141,9 @@
     <ClCompile Include="SceneGame.cpp">
       <Filter>Framework\Scene</Filter>
     </ClCompile>
+    <ClCompile Include="Map.cpp" />
     <ClCompile Include="Simon.cpp">
       <Filter>Gameobject\Simon</Filter>
     </ClCompile>
-    <ClCompile Include="Map.cpp" />
   </ItemGroup>
 </Project>

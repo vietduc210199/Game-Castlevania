@@ -4,10 +4,10 @@
 class CSampleKeyHander: public CKeyEventHandler
 {
 private:
-	CMario* mario;
+	CSimon* simon;
 	CGame* game;
 public:
-	CSampleKeyHander(CMario* mario, CGame* game) { this->mario = mario; this->game = game; };
+	CSampleKeyHander(CSimon* simon, CGame* game) { this->simon = simon; this->game = game; };
 	virtual void KeyState(BYTE *states);
 	virtual void OnKeyDown(int KeyCode);
 	virtual void OnKeyUp(int KeyCode);

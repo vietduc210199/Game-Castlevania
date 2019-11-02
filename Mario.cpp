@@ -1,12 +1,12 @@
 #include <algorithm>
 #include "debug.h"
 
-#include "Mario.h"
+#include "Simon.h"
 #include "Game.h"
 
 #include "Goomba.h"
 
-void CMario::Update(DWORD dt, vector<LPGAMEOBJECT> *coObjects)
+void CSimon::Update(DWORD dt, vector<LPGAMEOBJECT> *coObjects)
 {
 	// Calculate dx, dy 
 	CGameObject::Update(dt);
@@ -91,7 +91,7 @@ void CMario::Update(DWORD dt, vector<LPGAMEOBJECT> *coObjects)
 	for (UINT i = 0; i < coEvents.size(); i++) delete coEvents[i];
 }
 
-void CMario::Render()
+void CSimon::Render()
 {
 	int ani;
 	if (state == MARIO_STATE_DIE)
@@ -127,7 +127,7 @@ void CMario::Render()
 	RenderBoundingBox();
 }
 
-void CMario::SetState(int state)
+void CSimon::SetState(int state)
 {
 	CGameObject::SetState(state);
 
@@ -152,7 +152,7 @@ void CMario::SetState(int state)
 	}
 }
 
-void CMario::GetBoundingBox(float &left, float &top, float &right, float &bottom)
+void CSimon::GetBoundingBox(float &left, float &top, float &right, float &bottom)
 {
 	left = x;
 	top = y; 

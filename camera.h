@@ -6,9 +6,9 @@ class camera
 private:
 	float cx;
 	float cy;
-	CMario* mario;
+	CSimon* simon;
 public:
-	camera(CMario* mario) { this->mario = mario; cx = 0; cy = 0; };
+	camera(CSimon* simon) { this->simon = simon; cx = 0; cy = 0; };
 	~camera() {};
 	void setCameraPos();
 	float getCameraPosX();

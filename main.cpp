@@ -5,11 +5,9 @@
 
 
 CGame* game;
-CMario* mario = new CMario;
+CSimon* simon = new CSimon;
 CSampleKeyHander* keyHandler;
 SceneGame* sceneGame;
-TexturesManager* texManager;
-CTextures* textures;
 
 
 LRESULT CALLBACK WinProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
@@ -38,7 +36,6 @@ void Update(DWORD dt)
 
 void Render()
 {
-	//game->Draw(50.0f, 0, textures->Get(ID_TEX_MAP1), 1, 1, 383, 1535);
 	sceneGame->Render();
 }
 
@@ -119,8 +116,8 @@ int Run()
 
 			game->ProcessKeyboard();
 			
-			Update(dt);
 			Render();
+			Update(dt);
 		}
 		else
 			Sleep(tickPerFrame - dt);	
@@ -138,13 +135,10 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	game->Init(hWnd);
 
-	keyHandler = new CSampleKeyHander(mario, game);
+	keyHandler = new CSampleKeyHander(simon, game);
 	game->InitKeyboard(keyHandler);
 
-	texManager = TexturesManager::GetInstance();
-	textures = texManager->Gettextures();
-
-	sceneGame = SceneGame::GetInstance(game, mario);
+	sceneGame = SceneGame::GetInstance(game, simon);
 
 	LoadResources();
 

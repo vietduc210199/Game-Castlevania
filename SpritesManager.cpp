@@ -15,30 +15,6 @@ SpritesManager::SpritesManager()
 
 	textures = TexManager->Gettextures();
 
-	LPDIRECT3DTEXTURE9 texMario = textures->Get(ID_TEX_MARIO);
-
-	// big
-	sprites->Add(10001, 246, 154, 260, 181, texMario);		// idle right
-
-	sprites->Add(10002, 275, 154, 290, 181, texMario);		// walk
-	sprites->Add(10003, 304, 154, 321, 181, texMario);
-
-	sprites->Add(10011, 186, 154, 200, 181, texMario);		// idle left
-	sprites->Add(10012, 155, 154, 170, 181, texMario);		// walk
-	sprites->Add(10013, 125, 154, 140, 181, texMario);
-
-	sprites->Add(10099, 215, 120, 231, 135, texMario);		// die 
-
-	// small
-	sprites->Add(10021, 247, 0, 259, 15, texMario);			// idle small right
-	sprites->Add(10022, 275, 0, 291, 15, texMario);			// walk 
-	sprites->Add(10023, 306, 0, 320, 15, texMario);			// 
-
-	sprites->Add(10031, 187, 0, 198, 15, texMario);			// idle small left
-
-	sprites->Add(10032, 155, 0, 170, 15, texMario);			// walk
-	sprites->Add(10033, 125, 0, 139, 15, texMario);			// 
-
 
 	LPDIRECT3DTEXTURE9 texBrick = textures->Get(ID_TEX_BRICK);
 	sprites->Add(20001, 0, 0, 32, 32, texBrick);
@@ -48,6 +24,33 @@ SpritesManager::SpritesManager()
 	sprites->Add(30002, 25, 14, 41, 29, texEnemy);
 
 	sprites->Add(30003, 45, 21, 61, 29, texEnemy); // die sprite
+
+	//Simon---------------------------
+
+	LPDIRECT3DTEXTURE9 texSimonRight = textures->Get(ID_TEX_SIMON_RIGHT); //right
+	sprites->Add(10001, 435, 2, 470, 65, texSimonRight);		// idle right
+
+	sprites->Add(10002, 375, 2, 403, 65, texSimonRight);		// walk right
+	sprites->Add(10003, 312, 2, 345, 65, texSimonRight);
+
+		// jump right
+	sprites->Add(100040, 195, 0, 228, 48, texSimonRight);
+	sprites->Add(100041, 195, 0, 228, 48, texSimonRight);
+	sprites->Add(100042, 195, 0, 228, 48, texSimonRight);
+	sprites->Add(100043, 195, 0, 228, 48, texSimonRight);
+	
+	LPDIRECT3DTEXTURE9 texSimonLeft = textures->Get(ID_TEX_SIMON_LEFT); //left
+	sprites->Add(10011, 11, 2, 45, 65, texSimonLeft); //idle left
+
+	sprites->Add(10012, 76, 2, 103, 65, texSimonLeft); //walk left
+	sprites->Add(10013, 133, 2, 168, 65, texSimonLeft);
+
+		// jump left
+	sprites->Add(100140, 250, 0, 285, 48, texSimonLeft);
+	sprites->Add(100141, 250, 0, 285, 48, texSimonLeft);
+	sprites->Add(100142, 250, 0, 285, 48, texSimonLeft);
+	sprites->Add(100143, 250, 0, 285, 48, texSimonLeft);
+
 
 }
 

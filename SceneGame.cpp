@@ -2,15 +2,15 @@
 
 SceneGame* SceneGame::__instance = NULL;
 
-SceneGame::SceneGame(CGame* game, CMario* mario)
+SceneGame::SceneGame(CGame* game, CSimon* simon)
 {
 	this->game = game;
-	this->mario = mario;
+	this->simon = simon;
 }
 
-SceneGame* SceneGame::GetInstance(CGame* game, CMario* mario)
+SceneGame* SceneGame::GetInstance(CGame* game, CSimon* simon)
 {
-	if (__instance == NULL) __instance = new SceneGame(game, mario);
+	if (__instance == NULL) __instance = new SceneGame(game, simon);
 	return __instance;
 }
 
@@ -22,20 +22,18 @@ void SceneGame::Loadresources()
 	AnimationManager* aniManager = AnimationManager::GetInstance();
 	animations = aniManager->getAnimations();
 
-	mario->AddAnimation(400);		// idle right big
-	mario->AddAnimation(401);		// idle left big
-	mario->AddAnimation(402);		// idle right small
-	mario->AddAnimation(403);		// idle left small
+	simon->AddAnimation(400);		// idle right
+	simon->AddAnimation(401);		// idle left
 
-	mario->AddAnimation(500);		// walk right big
-	mario->AddAnimation(501);		// walk left big
-	mario->AddAnimation(502);		// walk right small
-	mario->AddAnimation(503);		// walk left big
+	simon->AddAnimation(500);		// walk right
+	simon->AddAnimation(501);		// walk left
 
-	mario->AddAnimation(599);		// die
+	simon->AddAnimation(2000);		// jump right
+	simon->AddAnimation(2010);		// jump left
 
-	mario->SetPosition(50.0f, 0);
-	objects.push_back(mario);
+
+	simon->SetPosition(50.0f, 0);
+	objects.push_back(simon);
 
 
 	for (int i = 0; i < 48; i++)
@@ -45,20 +43,8 @@ void SceneGame::Loadresources()
 		brick->SetPosition(-220.0f + i * 32.0f, 270);
 		objects.push_back(brick);
 	}
-
-	// and Goombas 
-	for (int i = 0; i < 4; i++)
-	{
-		goomba = new CGoomba();
-		goomba->AddAnimation(701);
-		goomba->AddAnimation(702);
-		//goomba->SetPosition(200 + i*60, 135);
-		goomba->SetPosition(220.0f + i * 60, 60.0f);
-		goomba->SetState(GOOMBA_STATE_WALKING);
-		objects.push_back(goomba);
-	}
 	
-	cam = new camera(mario);
+	cam = new camera(simon);
 
 }
 

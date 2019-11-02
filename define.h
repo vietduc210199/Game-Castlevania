@@ -8,7 +8,7 @@
 #include "Textures.h"
 #include "CSampleKeyHander.h"
 
-#include "Mario.h"
+#include "Simon.h"
 #include "Brick.h"
 #include "Goomba.h"
 
@@ -24,8 +24,10 @@
 #define ID_TEX_MAP1 01
 #define ID_TEX_MAP2 02
 
+#define ID_TEX_SIMON_LEFT 10
+#define ID_TEX_SIMON_RIGHT 11
+
 #define ID_TEX_BRICK 100
 
 #define ID_TEX_MARIO 0
-#define ID_TEX_ENEMY 10
-#define ID_TEX_MISC 20
+#define ID_TEX_ENEMY 101

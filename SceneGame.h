@@ -12,18 +12,18 @@ private:
 	CGame* game;
 	CSampleKeyHander* keyHandler;
 
-	CMario* mario;
+	CSimon* simon;
 	CGoomba* goomba;
 
 	vector<LPGAMEOBJECT> objects;
 
 public:
-	SceneGame(CGame* game, CMario* mario);
+	SceneGame(CGame* game, CSimon* simon);
 	~SceneGame() {};
 	void Loadresources();
 	void Update(DWORD dt);
 	void Render();
 
-	static SceneGame* GetInstance(CGame* game, CMario* mario);
+	static SceneGame* GetInstance(CGame* game, CSimon* simon);
 };
 
